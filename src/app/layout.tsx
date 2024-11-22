@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 export const metadata: Metadata = {
   title: "Gift Click",
@@ -14,12 +15,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body className="w-screen min-h-screen max-h-screen bg-white flex-col flex px-[6vw]">
+      <body className="w-screen min-h-screen max-h-screen bg-white flex-col flex">
         <Navbar/>
-        <div className="w-full h-fit">
-          {children}
+        <div className="w-full h-fit overflow-y-scroll px-[6vw]">
+          <div className="h-[1000px]">
+            {children}
+          </div>
+          <Footer/>
         </div>
-        
       </body>
     </html>
   );

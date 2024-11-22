@@ -21,8 +21,8 @@ export default function Profile(){
         </div>
       </div>
       <div className="group h-full w-full hover:bg-[#eaebed] duration-300 rounded-xl flex justify-center items-center gap-[0.5vw]">
-        <Coins size={28} className="text-[#202125] group-focus:text-[#77c555] duration-300" />
-        <span className="text-[#202125] group-focus:text-[#77c555] duration-300 text-[1.3vw]">13</span>
+        <Coins size={28} className="text-[#77c555] duration-300" />
+        <span className="text-[#77c555] duration-300 text-[1.3vw]">13</span>
       </div>
     </Link>
   )
