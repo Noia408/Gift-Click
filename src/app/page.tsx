@@ -20,7 +20,7 @@ export default function Home() {
       }}
        loop={true}
         modules={[Pagination, Autoplay]}
-        className="w-full h-full"
+        className="w-full h-fit"
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
@@ -33,17 +33,17 @@ export default function Home() {
         <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
       </div>
-      <div className="w-full h-[15vw] rounded-xl">
+      <div className="w-full h-fit rounded-xl overflow-auto">
       <Swiper
        slidesPerView={5}
-       spaceBetween={20}
+       spaceBetween={30}
        pagination={{
         clickable: true,
       }}
        loop={true}
        navigation={true}
         modules={[Navigation]}
-        className="mySwiper w-full h-full"
+        className="mySwiper w-full h-fit"
       >
         <SwiperSlide className="w-full h-full"><TagCard/></SwiperSlide>
         <SwiperSlide className="w-full h-full"><TagCard/></SwiperSlide>
