@@ -15,10 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body className="w-screen min-h-screen max-h-screen bg-white flex-col flex">
+      <body className="w-screen min-h-screen h-auto bg-white flex-col flex overflow-x-hidden">
         <Navbar/>
-        <div className="w-full h-fit overflow-y-scroll px-[6vw]">
-          <div className="h-[1000px]">
+        <div className="flex flex-col gap-[2vw] w-full min-h-full max-h-[calc(100%-8vw)] overflow-y-scroll">
+          <div className="h-fit w-full px-[6vw]">
             {children}
           </div>
           <Footer/>

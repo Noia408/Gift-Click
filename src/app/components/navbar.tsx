@@ -8,14 +8,13 @@ import {
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuList,
-  NavigationMenuLink,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 import React from "react";
 
 export default function Navbar() {
   return(
-    <nav className="w-full h-[8vw] bg-white flex flex-col px-[6vw]">
+    <nav className="w-full h-[8vw] bg-white flex flex-col px-[6vw] sticky top-0 z-50">
       <div className="flex items-center justify-between h-[5vw] w-full gap-[1vw] ">
         <Link href={"/"} className="flex items-center h-[90%] w-[7vw] mt-[0.4vw]">
           <Image src={"/asset/icon.png"} className="h-[120%] w-fit object-cover" width={100} height={50} alt="" />
@@ -32,20 +31,18 @@ export default function Navbar() {
       <div className="flex h-[3vw] w-full gap-[4vw]">
         <NavigationMenu className="flex gap-[1vw]">
           <Link href="/" className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center">
-            <NavigationMenuLink>
               Shopping
-            </NavigationMenuLink>
           </Link>
           <NavigationMenuList>
             <NavigationMenuItem className="hover:bg-[#eaebed] rounded-xl">
               <NavigationMenuTrigger className="text-[#202125] hover:text-[#202125]">Gift Cards</NavigationMenuTrigger>
-              <NavigationMenuContent className="border-[#d7d9db] rounded-xl overflow-auto">
-                <ul className="grid gap-[0.5vw] p-[0.5vw] w-[30vw] lg:grid-cols-[.75fr_1fr]">
-                <NavigationMenuLink className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Netflix</NavigationMenuLink>
-                <NavigationMenuLink className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Steam</NavigationMenuLink>
-                <NavigationMenuLink className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">PLaystation</NavigationMenuLink>
-                <NavigationMenuLink className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Xbox</NavigationMenuLink>
-                <NavigationMenuLink className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Nintedo</NavigationMenuLink>
+              <NavigationMenuContent className="border-[#d7d9db] overflow-auto">
+                <ul className="grid gap-[0.5vw] p-[0.5vw] w-[30vw] lg:grid-cols-[.75fr_1fr] bg-white z-40">
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Netflix</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Steam</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">PLaystation</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Xbox</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Nintedo</Link>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -53,17 +50,20 @@ export default function Navbar() {
           <NavigationMenuList>
             <NavigationMenuItem className="hover:bg-[#eaebed] rounded-xl">
               <NavigationMenuTrigger className="text-[#202125] hover:text-[#202125]">Promoções</NavigationMenuTrigger>
-              <NavigationMenuContent className="border-[#d7d9db] rounded-xl overflow-auto">
-                <ul className="grid gap-[0.5vw] p-[0.5vw] w-[20vw] lg:grid-cols-[.75fr_1fr]">
-                <NavigationMenuLink className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Netflix</NavigationMenuLink>
-                <NavigationMenuLink className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Steam</NavigationMenuLink>
-                <NavigationMenuLink className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">PLaystation</NavigationMenuLink>
-                <NavigationMenuLink className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Xbox</NavigationMenuLink>
-                <NavigationMenuLink className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Nintedo</NavigationMenuLink>
+              <NavigationMenuContent className="border-[#d7d9db] overflow-auto">
+                <ul className="grid gap-[0.5vw] p-[0.5vw] w-[20vw] lg:grid-cols-[.75fr_1fr] bg-white z-40">
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Netflix</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Steam</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">PLaystation</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Xbox</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Nintedo</Link>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
           </NavigationMenuList>
+          <Link href="/" className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center">
+              Sobre Nós
+          </Link>
         </NavigationMenu>
       </div>
     </nav>
