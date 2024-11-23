@@ -35,9 +35,26 @@ export default function Navbar() {
           </Link>
           <NavigationMenuList>
             <NavigationMenuItem className="hover:bg-[#eaebed] rounded-xl">
-              <NavigationMenuTrigger className="text-[#202125] hover:text-[#202125]">Gift Cards</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="text-[#202125]">Categorias</NavigationMenuTrigger>
               <NavigationMenuContent className="border-[#d7d9db] overflow-auto">
-                <ul className="grid gap-[0.5vw] p-[0.5vw] w-[30vw] lg:grid-cols-[.75fr_1fr] bg-white z-40">
+                <ul className="grid gap-[0.5vw] p-[0.5vw] w-[50vw] grid-cols-3 bg-white z-40">
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Entretenimento</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Jogos e eSports</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Compras</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Restaurantes</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Viagens</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Educação</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Beleza</Link>
+                <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Tecnologia</Link>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+          <NavigationMenuList>
+            <NavigationMenuItem className="hover:bg-[#eaebed] rounded-xl">
+              <NavigationMenuTrigger className="text-[#202125]">Gift Cards</NavigationMenuTrigger>
+              <NavigationMenuContent className="border-[#d7d9db] overflow-auto">
+                <ul className="grid gap-[0.5vw] p-[0.5vw] w-[50vw] grid-cols-3 bg-white z-40">
                 <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Netflix</Link>
                 <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Steam</Link>
                 <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">PLaystation</Link>
@@ -51,7 +68,7 @@ export default function Navbar() {
             <NavigationMenuItem className="hover:bg-[#eaebed] rounded-xl">
               <NavigationMenuTrigger className="text-[#202125] hover:text-[#202125]">Promoções</NavigationMenuTrigger>
               <NavigationMenuContent className="border-[#d7d9db] overflow-auto">
-                <ul className="grid gap-[0.5vw] p-[0.5vw] w-[20vw] lg:grid-cols-[.75fr_1fr] bg-white z-40">
+                <ul className="grid gap-[0.5vw] p-[0.5vw] w-[50vw] grid-cols-3 bg-white z-40">
                 <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Netflix</Link>
                 <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">Steam</Link>
                 <Link href={"/"} className="hover:bg-[#eaebed] p-[0.5vw] pl-[1vw] rounded-xl">PLaystation</Link>
