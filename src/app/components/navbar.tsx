@@ -25,7 +25,7 @@ export default function Navbar() {
         </form>
         <div className="w-[30vw] h-full flex justify-between items-center gap-[1vw]">
           <Profile/>
-          <Link href={""} className="group h-[70%] w-[20%] hover:bg-[#eaebed] duration-300 rounded-xl flex justify-center items-center"><ShoppingBasket size={32} className="text-[#202125] group-focus:text-[#77c555] duration-300" /></Link>
+          <Link href={"/carrinho"} className="group h-[70%] w-[20%] hover:bg-[#eaebed] duration-300 rounded-xl flex justify-center items-center"><ShoppingBasket size={32} className="text-[#202125] group-focus:text-[#77c555] duration-300" /></Link>
         </div>
       </div>
       <div className="flex h-[3vw] w-full gap-[4vw]">
