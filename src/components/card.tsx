@@ -36,7 +36,7 @@ export default function Card(){
             <span className="text-[1.4vw] font-semibold text-[#202125]">R$42,50</span>
             <span className="text-[1vw] line-through text-[#3b3d44]">R$50,00</span>
           </div>
-          <Link href={"/"} className="hover:bg-[#77c555] bg-green-700 duration-300 text-white px-[1vw] py-[0.5vw] rounded-xl text-[0.9vw]">
+          <Link href={"/produto"} className="hover:bg-[#77c555] bg-green-700 duration-300 text-white px-[1vw] py-[0.5vw] rounded-xl text-[0.9vw]">
             Comprar
           </Link>
         </div>
