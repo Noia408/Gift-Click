@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
-import TagCard from "./components/tag";
 import Image from "next/image";
-import Card from "./components/card";
+import TagCard from "@/components/tag";
+import Card from "@/components/card";
 
 export default function Home() {
   
