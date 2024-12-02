@@ -7,6 +7,14 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import Image from "next/image";
 import TagCard from "@/components/tag";
 import Card from "@/components/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+import { Clapperboard } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   
@@ -37,7 +45,7 @@ export default function Home() {
                 Ver Ofertas
               </button>
             </div>
-            <Image src={"/asset/banner1.jpg"} width={1920} height={1080} alt="Promoção Gift Cards" className="w-full h-full object-cover" />
+            <Image src={"/asset/overview_giftcards_header.webp"} width={1920} height={1080} alt="Promoção Gift Cards" className="w-full h-full object-cover" />
           </SwiperSlide>
           <SwiperSlide className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent z-10" />
@@ -48,7 +56,7 @@ export default function Home() {
                 Explorar
               </button>
             </div>
-            <Image src={"/asset/banner2.jpg"} width={1920} height={1080} alt="Gift Cards Jogos" className="w-full h-full object-cover" />
+            <Image src={"/asset/Fortnite.jpg"} width={1920} height={1080} alt="Gift Cards Jogos" className="w-full h-full object-cover" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -127,6 +135,90 @@ export default function Home() {
             <Card/>
           </SwiperSlide>
         </Swiper>
+      </div>
+      <div className="w-full h-fit p-[2vw] bg-green-700 rounded-xl flex flex-col gap-[2vw]">
+        <h1 className="text-[2vw] text-white">Ao fazer compras online, todos encontrarão algo para desfrutar</h1>
+        <div className="grid grid-cols-3 gap-[1vw]">
+          <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
+            <div className="w-full h-fit flex flex-col gap-[0.3vw]">
+              <Clapperboard className="text-green-700" size={36} />
+              <h1 className="text-[2vw] text-[#202125]">Entretenimento</h1>
+              <span className="text-[#3b3d44] text-[1vw]">Desbloqueie diversão sem fim com nossa coleção selecionada de cartões-presente de entretenimento dos principais e. plataformas de negociação. Quer se trate de filmes, música ou serviços de streaming, esses cartões-presente somente com criptomoedas oferecem entrega digital instantânea, colocando o entretenimento ao seu alcance.</span>
+            </div>
+            <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
+          </div>
+          <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
+            <div className="w-full h-fit flex flex-col gap-[0.3vw]">
+              <Clapperboard className="text-green-700" size={36} />
+              <h1 className="text-[2vw] text-[#202125]">Entretenimento</h1>
+              <span className="text-[#3b3d44] text-[1vw]">Desbloqueie diversão sem fim com nossa coleção selecionada de cartões-presente de entretenimento dos principais e. plataformas de negociação. Quer se trate de filmes, música ou serviços de streaming, esses cartões-presente somente com criptomoedas oferecem entrega digital instantânea, colocando o entretenimento ao seu alcance.</span>
+            </div>
+            <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
+          </div>
+          <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
+            <div className="w-full h-fit flex flex-col gap-[0.3vw]">
+              <Clapperboard className="text-green-700" size={36} />
+              <h1 className="text-[2vw] text-[#202125]">Entretenimento</h1>
+              <span className="text-[#3b3d44] text-[1vw]">Desbloqueie diversão sem fim com nossa coleção selecionada de cartões-presente de entretenimento dos principais e. plataformas de negociação. Quer se trate de filmes, música ou serviços de streaming, esses cartões-presente somente com criptomoedas oferecem entrega digital instantânea, colocando o entretenimento ao seu alcance.</span>
+            </div>
+            <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
+          </div>
+          <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
+            <div className="w-full h-fit flex flex-col gap-[0.3vw]">
+              <Clapperboard className="text-green-700" size={36} />
+              <h1 className="text-[2vw] text-[#202125]">Entretenimento</h1>
+              <span className="text-[#3b3d44] text-[1vw]">Desbloqueie diversão sem fim com nossa coleção selecionada de cartões-presente de entretenimento dos principais e. plataformas de negociação. Quer se trate de filmes, música ou serviços de streaming, esses cartões-presente somente com criptomoedas oferecem entrega digital instantânea, colocando o entretenimento ao seu alcance.</span>
+            </div>
+            <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
+          </div>
+          <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
+            <div className="w-full h-fit flex flex-col gap-[0.3vw]">
+              <Clapperboard className="text-green-700" size={36} />
+              <h1 className="text-[2vw] text-[#202125]">Entretenimento</h1>
+              <span className="text-[#3b3d44] text-[1vw]">Desbloqueie diversão sem fim com nossa coleção selecionada de cartões-presente de entretenimento dos principais e. plataformas de negociação. Quer se trate de filmes, música ou serviços de streaming, esses cartões-presente somente com criptomoedas oferecem entrega digital instantânea, colocando o entretenimento ao seu alcance.</span>
+            </div>
+            <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
+          </div>
+          
+
+        </div>
+
+      </div>
+      <div className="w-full h-fit flex flex-col">
+        <h1 className="text-[2vw] text-[#202125]">Perguntas frequentes</h1>
+        <Accordion type="single" collapsible className="w-full px-[2vw]">
+          <AccordionItem value="item-1">
+            <AccordionTrigger className="text-[1.5vw] text-[#202125]">Como recebo o giftcard após a compra?</AccordionTrigger>
+            <AccordionContent className="text-[#3b3d44] text-[1vw]">
+              Após a confirmação do pagamento, o giftcard será enviado automaticamente para o e-mail ou Whatsapp cadastrado na sua conta.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-2">
+            <AccordionTrigger className="text-[1.5vw] text-[#202125]">O que devo fazer se não receber o giftcard no meu e-mail?</AccordionTrigger>
+            <AccordionContent className="text-[#3b3d44] text-[1vw]">
+              Primeiro, verifique sua caixa de spam ou promoções no e-mail cadastrado. Se ainda não encontrar o giftcard, acesse sua conta na plataforma e consulte a área -Meus Pedidos-. Caso o problema persista, entre em contato com nosso suporte para verificar a situação.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-3">
+            <AccordionTrigger className="text-[1.5vw] text-[#202125]">O que faço se o código do giftcard não funcionar?</AccordionTrigger>
+            <AccordionContent className="text-[#3b3d44] text-[1vw]">
+              Se o código não funcionar, verifique se foi inserido corretamente e se está sendo usado na plataforma correta. Caso o problema persista, entre em contato com nosso suporte, informando os detalhes da compra. Nossa equipe solucionará o problema o mais rápido possível.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-4">
+            <AccordionTrigger className="text-[1.5vw] text-[#202125]">Preciso criar uma conta para comprar um giftcard?</AccordionTrigger>
+            <AccordionContent className="text-[#3b3d44] text-[1vw]">
+              Sim, para garantir a segurança da sua compra e o envio correto do giftcard, é necessário criar uma conta na nossa plataforma. O processo é rápido e simples, e seus dados estarão protegidos de acordo com nossa política de privacidade.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-5">
+            <AccordionTrigger className="text-[1.5vw] text-[#202125]">Como posso acumular pontos?</AccordionTrigger>
+            <AccordionContent className="text-[#3b3d44] text-[1vw]">
+              Nossa plataforma oferece um programa de recompensas! A cada compra de giftcards, você acumula pontos automaticamente. O número de pontos varia de acordo com o valor gasto e promoções específicas. Esses pontos podem ser resgatados em descontos em compras futuras ou ofertas exclusivas.
+            </AccordionContent>
+          </AccordionItem>
+          
+        </Accordion>
       </div>
 
     </div>

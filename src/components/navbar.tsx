@@ -90,6 +90,9 @@ export default function Navbar() {
           <Link href="/" className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center">
               Sobre Nós
           </Link>
+          <Link href="/" className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center">
+              Contactos
+          </Link>
         </NavigationMenu>
       </div>
     </nav>

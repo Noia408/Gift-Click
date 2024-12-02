@@ -2,7 +2,7 @@
     'use client'
     import { Swiper, SwiperSlide } from 'swiper/react';
     import { Navigation, Thumbs, } from 'swiper/modules';
-    import { useState } from 'react';
+    // import { useState } from 'react';
     import Image from 'next/image';
     import 'swiper/css';
     import 'swiper/css/navigation';
@@ -10,7 +10,7 @@
     import 'swiper/css/thumbs';
 
     const Produto = () => {
-      const [thumbsSwiper, setThumbsSwiper] = useState(null);
+      // const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
       return (
         <div className="w-full h-fit flex flex-col gap-[2vw] px-[6vw] py-[2vw]">
@@ -54,7 +54,6 @@
               </Swiper>
 
               <Swiper
-                onSwiper={setThumbsSwiper}
                 spaceBetween={10}
                 slidesPerView={4}
                 watchSlidesProgress={true}
