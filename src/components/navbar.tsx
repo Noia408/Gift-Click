@@ -30,7 +30,7 @@ export default function Navbar() {
       </div>
       <div className="flex h-[3vw] w-full gap-[4vw]">
         <NavigationMenu className="flex gap-[1vw]">
-          <Link href="/" className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center">
+          <Link href="/shopping" className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center">
               Shopping
           </Link>
           <NavigationMenuList>
@@ -87,10 +87,10 @@ export default function Navbar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
           </NavigationMenuList>
-          <Link href="/" className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center">
+          <Link href="/about" className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center">
               Sobre Nós
           </Link>
-          <Link href="/" className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center">
+          <Link href="/contacts" className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center">
               Contactos
           </Link>
         </NavigationMenu>
