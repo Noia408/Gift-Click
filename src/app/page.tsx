@@ -13,7 +13,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Clapperboard } from "lucide-react";
+import { BookCopy, ChevronRight, Clapperboard, Cpu, Gamepad, ShoppingBag } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -98,7 +98,13 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
       </div>
-
+      <div className="w-full h-fit p-[4vw] bg-green-700 rounded-xl flex flex-col gap-[1vw]">
+        <h1 className="text-[3vw] text-white">Por cada compra no site garante pontos para você trocar por benefícios e economizar ainda mais!</h1>
+        <span className="text-[1.5vw] text-white">Visite nossas ofertas imperdíveis e descubra produtos incríveis que podem ser resgatados com seus pontos. Aproveite para economizar e tornar suas compras ainda mais recompensadoras!</span>
+        <div className="w-fit h-fit mt-[1vw]">
+          <Link href={"/"} className="px-[2vw] py-[1vw] rounded-xl hover:text-[#77c555] text-white duration-300 bg-[#ef4444] flex">Visite Nossa Ofertas<ChevronRight  /></Link>
+        </div>
+      </div>
       {/* Produtos em Destaque */}
       <div className="w-full h-fit bg-[#f5f6f7] rounded-xl p-[2vw]">
         <h3 className="text-[2vw] font-semibold mb-[2vw] text-[#202125]">Produtos em Destaque</h3>
@@ -149,33 +155,33 @@ export default function Home() {
           </div>
           <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col gap-[0.3vw]">
-              <Clapperboard className="text-green-700" size={36} />
-              <h1 className="text-[2vw] text-[#202125]">Entretenimento</h1>
-              <span className="text-[#3b3d44] text-[1vw]">Desbloqueie diversão sem fim com nossa coleção selecionada de cartões-presente de entretenimento dos principais e. plataformas de negociação. Quer se trate de filmes, música ou serviços de streaming, esses cartões-presente somente com criptomoedas oferecem entrega digital instantânea, colocando o entretenimento ao seu alcance.</span>
+              <Gamepad className="text-green-700" size={36} />
+              <h1 className="text-[2vw] text-[#202125]">Jogos e eSports</h1>
+              <span className="text-[#3b3d44] text-[1vw]">Mergulhe no mundo dos jogos com nossa seleção exclusiva de cartões-presente de jogos dos melhores e. a escolha das plataformas de negociação. Esses cartões-presente de criptomoeda são a sua porta de entrada para entrega digital instantânea, com os melhores jogos e conteúdo de jogos a apenas um clique de distância.</span>
             </div>
             <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
           </div>
           <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col gap-[0.3vw]">
-              <Clapperboard className="text-green-700" size={36} />
-              <h1 className="text-[2vw] text-[#202125]">Entretenimento</h1>
-              <span className="text-[#3b3d44] text-[1vw]">Desbloqueie diversão sem fim com nossa coleção selecionada de cartões-presente de entretenimento dos principais e. plataformas de negociação. Quer se trate de filmes, música ou serviços de streaming, esses cartões-presente somente com criptomoedas oferecem entrega digital instantânea, colocando o entretenimento ao seu alcance.</span>
+              <ShoppingBag className="text-green-700" size={36} />
+              <h1 className="text-[2vw] text-[#202125]">Compras</h1>
+              <span className="text-[#3b3d44] text-[1vw]">Explore a ampla seleção de cartões-presente de lojas em mercados de comércio eletrônico. Todos os cartões-presente da loja podem ser adquiridos com criptomoedas e entregues instantaneamente por e-mail. pelo correio.</span>
             </div>
             <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
           </div>
           <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col gap-[0.3vw]">
-              <Clapperboard className="text-green-700" size={36} />
-              <h1 className="text-[2vw] text-[#202125]">Entretenimento</h1>
-              <span className="text-[#3b3d44] text-[1vw]">Desbloqueie diversão sem fim com nossa coleção selecionada de cartões-presente de entretenimento dos principais e. plataformas de negociação. Quer se trate de filmes, música ou serviços de streaming, esses cartões-presente somente com criptomoedas oferecem entrega digital instantânea, colocando o entretenimento ao seu alcance.</span>
+              <BookCopy className="text-green-700" size={36} />
+              <h1 className="text-[2vw] text-[#202125]">Educação</h1>
+              <span className="text-[#3b3d44] text-[1vw]">Encontre giftcards dedicados ao aprendizado e desenvolvimento pessoal! Acesse cursos online, plataformas de idiomas, treinamentos profissionais e muito mais, com opções que ajudam você a investir no seu conhecimento de forma prática e acessível.</span>
             </div>
             <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
           </div>
           <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col gap-[0.3vw]">
-              <Clapperboard className="text-green-700" size={36} />
-              <h1 className="text-[2vw] text-[#202125]">Entretenimento</h1>
-              <span className="text-[#3b3d44] text-[1vw]">Desbloqueie diversão sem fim com nossa coleção selecionada de cartões-presente de entretenimento dos principais e. plataformas de negociação. Quer se trate de filmes, música ou serviços de streaming, esses cartões-presente somente com criptomoedas oferecem entrega digital instantânea, colocando o entretenimento ao seu alcance.</span>
+              <Cpu className="text-green-700" size={36} />
+              <h1 className="text-[2vw] text-[#202125]">Tecnologia</h1>
+              <span className="text-[#3b3d44] text-[1vw]">Nossa ampla seleção de cartões-presente eletrônicos ajudará você a encontrar o que precisa, desde dispositivos de nicho até gigantes do setor.</span>
             </div>
             <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
           </div>
