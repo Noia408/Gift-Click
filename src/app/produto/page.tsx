@@ -1,7 +1,7 @@
 
     'use client'
     import { Swiper, SwiperSlide } from 'swiper/react';
-    import { Navigation, Thumbs, } from 'swiper/modules';
+    import { Navigation } from 'swiper/modules';
     // import { useState } from 'react';
     import Image from 'next/image';
     import 'swiper/css';
@@ -20,7 +20,7 @@
               <Swiper
                 spaceBetween={10}
                 navigation={true}
-                modules={[Navigation, Thumbs]}
+                modules={[Navigation]}
                 className="w-full aspect-square rounded-xl overflow-hidden mb-[1vw]"
               >
                 <SwiperSlide>
@@ -56,7 +56,7 @@
                 spaceBetween={10}
                 slidesPerView={4}
                 watchSlidesProgress={true}
-                modules={[Thumbs]}
+                modules={[Navigation]}
                 className="thumbs-swiper h-[5vw]"
               >
                 <SwiperSlide className="cursor-pointer rounded-xl overflow-hidden">
