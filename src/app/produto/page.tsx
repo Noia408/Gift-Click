@@ -20,7 +20,6 @@
               <Swiper
                 spaceBetween={10}
                 navigation={true}
-                thumbs={{ swiper: thumbsSwiper }}
                 modules={[Navigation, Thumbs]}
                 className="w-full aspect-square rounded-xl overflow-hidden mb-[1vw]"
               >
