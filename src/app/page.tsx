@@ -66,10 +66,14 @@ export default function Home() {
         <h3 className="text-[2vw] font-semibold mb-[2vw] text-[#202125]">Categorias Populares</h3>
         <Swiper
           slidesPerView={5}
+          autoplay={{
+            delay: 4500,
+            disableOnInteraction: false,
+          }}
           spaceBetween={30}
           navigation={true}
           loop={true}
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           className="w-full h-fit"
         >
           <SwiperSlide className="w-full h-full">
@@ -145,45 +149,45 @@ export default function Home() {
       <div className="w-full h-fit p-[2vw] bg-green-700 rounded-xl flex flex-col gap-[2vw]">
         <h1 className="text-[2vw] text-white">Ao fazer compras online, todos encontrarão algo para desfrutar</h1>
         <div className="grid grid-cols-3 gap-[1vw]">
-          <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
+          <div className="group hover:scale-95 duration-300 p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col gap-[0.3vw]">
               <Clapperboard className="text-green-700" size={36} />
               <h1 className="text-[2vw] text-[#202125]">Entretenimento</h1>
               <span className="text-[#3b3d44] text-[1vw]">Desbloqueie diversão sem fim com nossa coleção selecionada de cartões-presente de entretenimento dos principais e. plataformas de negociação. Quer se trate de filmes, música ou serviços de streaming, esses cartões-presente somente com criptomoedas oferecem entrega digital instantânea, colocando o entretenimento ao seu alcance.</span>
             </div>
-            <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
+            <Link href={"/"} className="duration-300 group-hover:text-white group-hover:bg-[#ef4444] w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
           </div>
-          <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
+          <div className="group hover:scale-95 duration-300 p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col gap-[0.3vw]">
               <Gamepad className="text-green-700" size={36} />
               <h1 className="text-[2vw] text-[#202125]">Jogos e eSports</h1>
               <span className="text-[#3b3d44] text-[1vw]">Mergulhe no mundo dos jogos com nossa seleção exclusiva de cartões-presente de jogos dos melhores e. a escolha das plataformas de negociação. Esses cartões-presente de criptomoeda são a sua porta de entrada para entrega digital instantânea, com os melhores jogos e conteúdo de jogos a apenas um clique de distância.</span>
             </div>
-            <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
+            <Link href={"/"} className="duration-300 group-hover:text-white group-hover:bg-[#ef4444] w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
           </div>
-          <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
+          <div className="group hover:scale-95 duration-300 p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col gap-[0.3vw]">
               <ShoppingBag className="text-green-700" size={36} />
               <h1 className="text-[2vw] text-[#202125]">Compras</h1>
               <span className="text-[#3b3d44] text-[1vw]">Explore a ampla seleção de cartões-presente de lojas em mercados de comércio eletrônico. Todos os cartões-presente da loja podem ser adquiridos com criptomoedas e entregues instantaneamente por e-mail. pelo correio.</span>
             </div>
-            <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
+            <Link href={"/"} className="duration-300 group-hover:text-white group-hover:bg-[#ef4444] w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
           </div>
-          <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
+          <div className="group hover:scale-95 duration-300 p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col gap-[0.3vw]">
               <BookCopy className="text-green-700" size={36} />
               <h1 className="text-[2vw] text-[#202125]">Educação</h1>
               <span className="text-[#3b3d44] text-[1vw]">Encontre giftcards dedicados ao aprendizado e desenvolvimento pessoal! Acesse cursos online, plataformas de idiomas, treinamentos profissionais e muito mais, com opções que ajudam você a investir no seu conhecimento de forma prática e acessível.</span>
             </div>
-            <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
+            <Link href={"/"} className="duration-300 group-hover:text-white group-hover:bg-[#ef4444] w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
           </div>
-          <div className="p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
+          <div className="group hover:scale-95 duration-300 p-[1vw] bg-white rounded-xl w-full h-[25vw] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col gap-[0.3vw]">
               <Cpu className="text-green-700" size={36} />
               <h1 className="text-[2vw] text-[#202125]">Tecnologia</h1>
               <span className="text-[#3b3d44] text-[1vw]">Nossa ampla seleção de cartões-presente eletrônicos ajudará você a encontrar o que precisa, desde dispositivos de nicho até gigantes do setor.</span>
             </div>
-            <Link href={"/"} className="w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
+            <Link href={"/"} className="duration-300 group-hover:text-white group-hover:bg-[#ef4444] w-full items-center justify-center flex py-[0.5vw] bg-[#eaebed] rounded-xl">Navegar</Link>
           </div>
           
 
