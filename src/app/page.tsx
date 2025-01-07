@@ -5,7 +5,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import Image from "next/image";
-import TagCard from "@/components/tag";
 import Card from "@/components/card";
 import {
   Accordion,
@@ -63,7 +62,7 @@ export default function Home() {
 
       {/* Categorias */}
       <div className="w-full h-fit rounded-xl overflow-hidden">
-        <h3 className="text-[2vw] font-semibold mb-[2vw] text-[#202125]">Categorias Populares</h3>
+        <h3 className="text-[2vw] font-semibold mb-[2vw] text-[#202125]">Descontos da Semana</h3>
         <Swiper
           slidesPerView={5}
           autoplay={{
@@ -77,28 +76,28 @@ export default function Home() {
           className="w-full h-fit"
         >
           <SwiperSlide className="w-full h-full">
-            <TagCard />
+            <Card/>
           </SwiperSlide>
           <SwiperSlide className="w-full h-full">
-            <TagCard  />
+            <Card/>
           </SwiperSlide>
           <SwiperSlide className="w-full h-full">
-            <TagCard />
+            <Card/>
           </SwiperSlide>
           <SwiperSlide className="w-full h-full">
-            <TagCard />
+            <Card/>
           </SwiperSlide>
           <SwiperSlide className="w-full h-full">
-            <TagCard />
+            <Card/>
           </SwiperSlide>
           <SwiperSlide className="w-full h-full">
-            <TagCard />
+            <Card/>
           </SwiperSlide>
           <SwiperSlide className="w-full h-full">
-            <TagCard />
+            <Card/>
           </SwiperSlide>
           <SwiperSlide className="w-full h-full">
-            <TagCard />
+            <Card/>
           </SwiperSlide>
         </Swiper>
       </div>
