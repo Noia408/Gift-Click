@@ -7,12 +7,18 @@ import {
     SelectTrigger,
     SelectValue,
   } from "@/components/ui/select"
+  import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+  } from "@/components/ui/accordion"
 import Image from "next/image";
 import { CreditCard, Heart, ShoppingBasket } from "lucide-react";
 
 export default function Produto(){
     return(
-        <div className="w-full h-fit flex flex-col gap-[3vw] pt-[1vw]">
+        <div className="w-full h-fit flex flex-col gap-[1vw] pt-[1vw]">
             <div className="w-full h-fit flex rounded-xl border border-[#d7d9db] p-[2vw] gap-[2vw]">
                 <div className="w-[35%] h-fit">
                     <div className="bg-black w-full h-[18.3vw] rounded-xl overflow-hidden">
@@ -68,7 +74,52 @@ export default function Produto(){
                 </div>
 
             </div>
-
+            <div className="w-full h-fit flex rounded-xl border border-[#d7d9db] p-[2vw] gap-[1vw] flex-col">
+                <h1 className="text-[2.2vw] text-green-700">Sobre</h1>
+                <div className="w-full h-fit flex flex-col gap-[0.5vw] px-[1vw]">
+                    <span className="text-[1.5vw] text-[#202125]">A maior comunidade de aplicativos móveis</span>
+                    <span className="text-[1vw] text-[#3b3d44] text-justify">
+                    Um vale-presente do Google Play é um ótimo presente para pessoas que gostam de consumir conteúdo digital. Você pode permitir que uma pessoa participe da maior comunidade de jogos para dispositivos móveis do mundo e explore os vastos horizontes dos filmes no Google Play Filmes.Mas isso não é tudo. A Google Play Store também possui mais de 5 milhões de aplicativos. de livros e impressionantes 40 milhões músicas que você pode acessar a qualquer momento. Você também pode assinar vários serviços como Duolingo ou Evernote.Após receber o código digital por e-mail por correio, você pode decidir onde usá-lo. Mime-se com uma experiência musical sem anúncios ou presenteie um ente querido com um cartão para que ele possa experimentar aplicativos, músicas ou livros como nunca antes.
+                    </span>
+                </div>
+                <h1 className="text-[2.2vw] text-green-700">Activar</h1>
+            </div>
+            <div className="w-full h-fit flex flex-col">
+            <h1 className="text-[2vw] text-[#202125]">Perguntas frequentes</h1>
+            <Accordion type="single" collapsible className="w-full px-[2vw]">
+            <AccordionItem value="item-1">
+                <AccordionTrigger className="text-[1.5vw] text-[#202125]">Como recebo o giftcard após a compra?</AccordionTrigger>
+                <AccordionContent className="text-[#3b3d44] text-[1vw]">
+                Após a confirmação do pagamento, o giftcard será enviado automaticamente para o e-mail ou Whatsapp cadastrado na sua conta.
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+                <AccordionTrigger className="text-[1.5vw] text-[#202125]">O que devo fazer se não receber o giftcard no meu e-mail?</AccordionTrigger>
+                <AccordionContent className="text-[#3b3d44] text-[1vw]">
+                Primeiro, verifique sua caixa de spam ou promoções no e-mail cadastrado. Se ainda não encontrar o giftcard, acesse sua conta na plataforma e consulte a área -Meus Pedidos-. Caso o problema persista, entre em contato com nosso suporte para verificar a situação.
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+                <AccordionTrigger className="text-[1.5vw] text-[#202125]">O que faço se o código do giftcard não funcionar?</AccordionTrigger>
+                <AccordionContent className="text-[#3b3d44] text-[1vw]">
+                Se o código não funcionar, verifique se foi inserido corretamente e se está sendo usado na plataforma correta. Caso o problema persista, entre em contato com nosso suporte, informando os detalhes da compra. Nossa equipe solucionará o problema o mais rápido possível.
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+                <AccordionTrigger className="text-[1.5vw] text-[#202125]">Preciso criar uma conta para comprar um giftcard?</AccordionTrigger>
+                <AccordionContent className="text-[#3b3d44] text-[1vw]">
+                Sim, para garantir a segurança da sua compra e o envio correto do giftcard, é necessário criar uma conta na nossa plataforma. O processo é rápido e simples, e seus dados estarão protegidos de acordo com nossa política de privacidade.
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+                <AccordionTrigger className="text-[1.5vw] text-[#202125]">Como posso acumular pontos?</AccordionTrigger>
+                <AccordionContent className="text-[#3b3d44] text-[1vw]">
+                Nossa plataforma oferece um programa de recompensas! A cada compra de giftcards, você acumula pontos automaticamente. O número de pontos varia de acordo com o valor gasto e promoções específicas. Esses pontos podem ser resgatados em descontos em compras futuras ou ofertas exclusivas.
+                </AccordionContent>
+            </AccordionItem>
+            
+            </Accordion>
+      </div>
         </div>
     )
 }
