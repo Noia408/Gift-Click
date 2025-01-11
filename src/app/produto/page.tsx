@@ -1,4 +1,5 @@
 import Link from "next/link";
+import * as React from "react"
 import {
     Select,
     SelectContent,
@@ -14,7 +15,7 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion"
 import Image from "next/image";
-import { CreditCard, Heart, ShoppingBasket } from "lucide-react";
+import { CreditCard, Heart, Send, Shield, ShoppingBasket, Zap } from "lucide-react";
 
 export default function Produto(){
     return(
@@ -26,9 +27,12 @@ export default function Produto(){
                     </div>
                 </div>
                 <div className="w-[65%] h-fit flex flex-col gap-[0.8vw]">
-                    <div className="flex justify-between h-fit w-full">
-                        <span className="text-[2.2vw]">Gift Card Google Play</span>
-                        <button className="bg-[#d7d9db] focus:[#3b3d44] py-[0.1vw] px-[0.5vw] rounded-xl flex gap-[0.2vw] justify-center items-center"><Heart className="" size={20} /> 100</button>
+                    <div className="w-full h-fit flex flex-col">
+                        <div className="flex justify-between h-fit w-full">
+                            <span className="text-[2.2vw]">Gift Card Google Play</span>
+                            <button className="bg-[#d7d9db] focus:[#3b3d44] py-[0.1vw] px-[0.5vw] rounded-xl flex gap-[0.2vw] justify-center items-center"><Heart className="" size={20} /> 100</button>
+                        </div>
+                        <span className="text-green-700 text-[1.3vw]">Entretenimento</span>
                     </div>
                     <span className="text-[0.9vw] text-justify text-[#3b3d44]">O Google Play é a plataforma de entretenimento do Google que oferece músicas, filmes, livros e aplicativos para dispositivos Android. É a loja oficial de aplicativos do sistema operacional Android, onde os usuários podem navegar e baixar aplicativos desenvolvidos usando o Android SDK e publicados pelo Google. Os clientes podem comprar cartões-presente do Google Play na CoinGate para criptomoeda. Também aceitamos cartões de crédito/débito Visa e Mastercard!</span>
                     <div className="w-full h-fit flex flex-col gap-[0.5vw]">
@@ -70,9 +74,7 @@ export default function Produto(){
                         <Link href={"\carrinho"} className="h-full w-[4vw] bg-[#ef4444] rounded-l-xl flex items-center justify-center text-white text-[1.5vw]"><ShoppingBasket /></Link>
                         <button className="bg-green-700 hover:bg-[#77c555] duration-300 h-full w-[20vw] rounded-r-xl text-white text-[1.5vw] flex items-center justify-center gap-[0.5vw]"><CreditCard /> Comprar Agora</button>
                     </div>
-
                 </div>
-
             </div>
             <div className="w-full h-fit flex rounded-xl border border-[#d7d9db] p-[2vw] gap-[1vw] flex-col">
                 <h1 className="text-[2.2vw] text-green-700">Sobre</h1>
@@ -83,6 +85,36 @@ export default function Produto(){
                     </span>
                 </div>
                 <h1 className="text-[2.2vw] text-green-700">Activar</h1>
+            </div>
+            <h1 className="text-[2vw] text-[#202125] mt-[1.5vw]">Benefícios dos serviços</h1>
+            <div className="w-full h-[10vw] grid grid-cols-3 gap-[6vw] border-b border-[#d7d9db] mb-[1.5vw]">
+                <div className="w-full h-full flex flex-col justify-center gap-[1vw]">
+                    <Send size={38} className="text-green-700" />
+                    <span className="text-[1.5vw] text-[#3b3d44]">Entrega instantânea</span>
+                </div>
+                <div className="w-full h-full flex flex-col justify-center gap-[1vw]">
+                    <Shield size={38} className="text-green-700" />
+                    <span className="text-[1.5vw] text-[#3b3d44]">Pagamento privado e seguro</span>
+                </div>
+                <div className="w-full h-full flex flex-col justify-center gap-[1vw]">
+                    <Zap size={38} className="text-green-700" />
+                    <span className="text-[1.5vw] text-[#3b3d44]">Tarifas de rede mais baixas</span>
+                </div>
+            </div>
+            <h1 className="text-[2vw] text-[#202125] mt-[1.5vw]">Estatísticas da loja</h1>
+            <div className="w-full h-[10vw] grid grid-cols-3 gap-[6vw] border-b border-[#d7d9db] mb-[1.5vw]">
+                <div className="w-full h-full flex flex-col justify-center gap-[1vw]">
+                    <span className="text-[2.5vw] text-green-700">212.300+</span>
+                    <span className="text-[1.5vw] text-[#3b3d44]">Pedidos atendidos</span>
+                </div>
+                <div className="w-full h-full flex flex-col justify-center gap-[1vw]">
+                    <span className="text-[2.5vw] text-green-700">212.300+</span>
+                    <span className="text-[1.5vw] text-[#3b3d44]">Cartões-presente vendidos</span>
+                </div>
+                <div className="w-full h-full flex flex-col justify-center gap-[1vw]">
+                    <span className="text-[2.5vw] text-green-700">10 anos</span>
+                    <span className="text-[1.5vw] text-[#3b3d44]">Tempo médio do pedido</span>
+                </div>
             </div>
             <div className="w-full h-fit flex flex-col">
             <h1 className="text-[2vw] text-[#202125]">Perguntas frequentes</h1>
