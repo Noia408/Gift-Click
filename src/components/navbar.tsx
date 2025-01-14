@@ -30,8 +30,8 @@ export default function Navbar() {
       </div>
       <div className="flex h-[3vw] w-full gap-[4vw]">
         <NavigationMenu className="flex gap-[1vw]">
-          <Link href="/shopping" className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center">
-              Shopping
+          <Link href="/compra" className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center">
+              Compra
           </Link>
           <NavigationMenuList>
             <NavigationMenuItem className="hover:bg-[#eaebed] rounded-xl">
