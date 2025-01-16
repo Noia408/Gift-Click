@@ -7,11 +7,14 @@ export default function Card(){
       <Link href={"/produto"} className="w-full h-full flex flex-col">
         <div className="w-full h-[65%] bg-black relative">
           <Image className="w-full h-fit object-cover" src={"/asset/Google Play.jpg"} alt="" height={1080} width={1920}/>
-          <div className="w-[3vw] h-[2vw] bg-[#ef4444] rounded-xl text-white absolute flex justify-center items-center left-[75%] top-[10%]">15%</div>
+          <div className="w-fit h-fit py-[0.2vw] px-[0.3vw] bg-[#ef4444] rounded-xl text-white absolute flex justify-center items-center right-[5%] top-[8%]">Entretenimento</div>
         </div>
         <div className="w-full h-[35%] flex flex-col gap-[0.3vw] px-[1vw] py-[0.5vw] relative">
-          <span className="text-[#3b3d44] text-[1.6vw]">Google Play</span>
-          <span className="text-green-700 text-[1vw]">Entretenimento</span>
+          <span className="text-[#3b3d44] text-[1.5vw]">Google Play</span>
+          <div className="flex gap-[0.3vw]">
+            <span className="tex-[1vw]">Conta:</span>
+            <span className="tex-[1vw] text-[#77c555]">America</span>
+          </div>
         </div>
       </Link>
     </div>

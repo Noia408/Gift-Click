@@ -1,13 +1,5 @@
 import Link from "next/link";
 import * as React from "react"
-import {
-    Select,
-    SelectContent,
-    SelectGroup,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-  } from "@/components/ui/select"
   import {
     Accordion,
     AccordionContent,
@@ -15,7 +7,7 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion"
 import Image from "next/image";
-import { CreditCard, Heart, Send, Shield, ShoppingBasket, Zap } from "lucide-react";
+import { Coins, CreditCard, Send, Shield, ShoppingBasket, Zap } from "lucide-react";
 
 export default function Produto(){
     return(
@@ -30,44 +22,20 @@ export default function Produto(){
                     <div className="w-full h-fit flex flex-col">
                         <div className="flex justify-between h-fit w-full">
                             <span className="text-[2.2vw]">Gift Card Google Play</span>
-                            <button className="bg-[#d7d9db] focus:[#3b3d44] py-[0.1vw] px-[0.5vw] rounded-xl flex gap-[0.2vw] justify-center items-center"><Heart className="" size={20} /> 100</button>
+                            <div className="bg-[#eaebed] py-[0.1vw] px-[0.5vw] rounded-xl flex gap-[0.3vw] justify-center items-center text-[1.3vw] text-[#77c555]"><Coins className="text-[#77c555]" size={28} /> 10</div>
                         </div>
                         <span className="text-green-700 text-[1.3vw]">Entretenimento</span>
                     </div>
                     <span className="text-[0.9vw] text-justify text-[#3b3d44]">O Google Play é a plataforma de entretenimento do Google que oferece músicas, filmes, livros e aplicativos para dispositivos Android. É a loja oficial de aplicativos do sistema operacional Android, onde os usuários podem navegar e baixar aplicativos desenvolvidos usando o Android SDK e publicados pelo Google. Os clientes podem comprar cartões-presente do Google Play na CoinGate para criptomoeda. Também aceitamos cartões de crédito/débito Visa e Mastercard!</span>
-                    <div className="w-full h-fit flex flex-col gap-[0.5vw]">
-                        <span className="text-[1.2vw]">Região</span>
-                        <Select>
-                            <SelectTrigger className="w-full h-[3.5vw] rounded-xl border border-[#d7d9db] px-[1vw]">
-                                <SelectValue placeholder="Select a fruit" />
-                            </SelectTrigger>
-                            <SelectContent className="bg-white px-[1vw] w-[96%]">
-                                <SelectGroup>
-                                <SelectItem className="p-[0.5vw]" value="apple">Apple</SelectItem>
-                                <SelectItem className="p-[0.5vw]" value="banana">Banana</SelectItem>
-                                <SelectItem className="p-[0.5vw]" value="blueberry">Blueberry</SelectItem>
-                                <SelectItem className="p-[0.5vw]" value="grapes">Grapes</SelectItem>
-                                <SelectItem className="p-[0.5vw]" value="pineapple">Pineapple</SelectItem>
-                                </SelectGroup>
-                            </SelectContent>
-                        </Select>
-                    </div>
-                    <div className="w-full h-fit flex flex-col gap-[0.5vw]">
-                        <span className="text-[1.2vw]">Preço</span>
-                        <Select>
-                            <SelectTrigger className="w-full h-[3.5vw] rounded-xl border border-[#d7d9db] px-[1vw]">
-                                <SelectValue placeholder="Select a fruit" />
-                            </SelectTrigger>
-                            <SelectContent className="bg-white px-[1vw] w-[96%]">
-                                <SelectGroup>
-                                <SelectItem className="p-[0.5vw]" value="apple">Apple</SelectItem>
-                                <SelectItem className="p-[0.5vw]" value="banana">Banana</SelectItem>
-                                <SelectItem className="p-[0.5vw]" value="blueberry">Blueberry</SelectItem>
-                                <SelectItem className="p-[0.5vw]" value="grapes">Grapes</SelectItem>
-                                <SelectItem className="p-[0.5vw]" value="pineapple">Pineapple</SelectItem>
-                                </SelectGroup>
-                            </SelectContent>
-                        </Select>
+                    <div className="flex gap-[1.5vw]">
+                        <div className="flex gap-[0.3vw]">
+                            <span className="tex-[1.2vw]">Regiao:</span>
+                            <span className="tex-[1.2vw] text-[#77c555]">America</span>
+                        </div>
+                        <div className="flex gap-[0.3vw]">
+                            <span className="tex-[1.2vw]">Valor do GiftCard:</span>
+                            <span className="tex-[1.2vw] text-[#77c555]">15 Dollares</span>
+                        </div>
                     </div>
                     <span className="text-[2.0vw]">5.000 kz</span>
                     <div className="w-full h-[4vw] flex gap-[0.5vw]">
