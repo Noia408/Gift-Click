@@ -193,6 +193,7 @@ export default function Home() {
         </div>
 
       </div>
+      
       <div className="w-full h-fit flex flex-col">
         <h1 className="text-[2vw] text-[#202125]">Perguntas frequentes</h1>
         <Accordion type="single" collapsible className="w-full px-[2vw]">
