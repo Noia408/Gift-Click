@@ -10,6 +10,10 @@
 *{
   font-family: normal;
 }
+.greengradiente{
+  background: rgb(2,0,36);
+background: linear-gradient(118deg, rgba(2,0,36,0) 0%, rgba(142,218,159,0.3534663865546218) 100%);
+}
 .sbox{
   -webkit-box-shadow: 3px 5px 38px -24px rgba(0,0,0,0.56);
 -moz-box-shadow: 3px 5px 38px -24px rgba(0,0,0,0.56);

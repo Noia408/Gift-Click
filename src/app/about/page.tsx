@@ -1,62 +1,61 @@
+import Image from "next/image";
+
 export default function Sobre(){
   return(
-    <div className="flex flex-col gap-8 py-12">
-      <h1 className="text-4xl font-bold text-center">Sobre Nós</h1>
-      
-      <section className="flex flex-col gap-6">
-        <h2 className="text-2xl font-semibold">Nossa História</h2>
-        <p className="text-gray-700 leading-relaxed">
-          Fundada em 2020, a TechStore nasceu com a missão de tornar a tecnologia acessível a todos. 
-          Começamos como uma pequena loja online e hoje somos referência no mercado de e-commerce de 
-          produtos eletrônicos no Brasil.
-        </p>
-      </section>
-
-      <section className="flex flex-col gap-6">
-        <h2 className="text-2xl font-semibold">Nossa Missão</h2>
-        <p className="text-gray-700 leading-relaxed">
-          Buscamos oferecer produtos de alta qualidade com preços competitivos, 
-          garantindo a melhor experiência de compra para nossos clientes. Nossa equipe 
-          está sempre pronta para oferecer suporte especializado e orientação na escolha 
-          dos produtos.
-        </p>
-      </section>
-
-      <section className="flex flex-col gap-6">
-        <h2 className="text-2xl font-semibold">Nossos Valores</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-medium">Qualidade</h3>
-            <p className="text-gray-700">Trabalhamos apenas com produtos e marcas reconhecidas no mercado.</p>
+    <div className="flex flex-col w-full h-fit gap-[3vw] py-[1vw]">
+      <div className="w-full h-[30vw] rounded-xl flex p-[1vw] px-[4vw]">
+        <div className="w-[50%] h-full flex flex-col justify-center gap-[0.5vw]">
+          <span className="text-[3.5vw]">Sobre a Gift Click</span>
+          <span className="text-[1.3vw]">Sobre a Gift Click Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit at facilis iure corporis praesentium, eveniet accusantium porro consectetur ipsum eius aliquam fugiat laborum pariatur eum beatae ab eaque quam labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil voluptatibus, inventore excepturi, quaerat repellendus totam maxime alias provident dolorum ipsum! Consequatur, odio asperiores placeat distinctio ipsum cupiditate velit et!</span>
+        </div>
+        <div className="w-[50%] h-full flex items-center justify-center">
+          <Image className="h-[90%] object-contain" src={"/asset/ilcons_Chapter_4-removebg-preview.png"} alt="" width={500} height={500}/>
+        </div>
+      </div>
+      <div className="w-full h-fit border p-[3vw] px-[6vw] rounded-xl flex flex-col gap-[2vw]">
+        <div className="flex flex-col w-full items-center">
+          <span className="text-[1.5vw] text-green-700">Nós Somos Gift Click</span>
+          <span className="text-[2.5vw]">Sobre a Gift Click</span>
+        </div>
+        <div className="w-full h-fit grid grid-cols-3 gap-[1vw] ">
+          <div className="w-full h-[17vw] flex flex-col items-center gap-[0.2w]">
+            <div className="w-[13vw] h-[13vw] rounded-full bg-black overflow-hidden">
+              <Image className="w-full h-full object-contain" src={"/asset/unnamed.jpg"} alt="" width={500} height={500} />
+            </div>
+            <span className="text-[1.5vw]">Afonso T. Esteves</span>
+            <span className="text-green-700">Tecnico de TI</span>
           </div>
-          <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-medium">Transparência</h3>
-            <p className="text-gray-700">Prezamos pela honestidade em todas as nossas relações comerciais.</p>
+          <div className="w-full h-[17vw] flex flex-col items-center gap-[0.2w]">
+            <div className="w-[13vw] h-[13vw] rounded-full bg-black overflow-hidden">
+              <Image className="w-full h-full object-contain" src={"/asset/unnamed.jpg"} alt="" width={500} height={500} />
+            </div>
+            <span className="text-[1.5vw]">Afonso T. Esteves</span>
+            <span className="text-green-700">Tecnico de TI</span>
           </div>
-          <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-medium">Inovação</h3>
-            <p className="text-gray-700">Sempre buscando as últimas tendências em tecnologia.</p>
+          <div className="w-full h-[17vw] flex flex-col items-center gap-[0.2w]">
+            <div className="w-[13vw] h-[13vw] rounded-full bg-black overflow-hidden">
+              <Image className="w-full h-full object-contain" src={"/asset/unnamed.jpg"} alt="" width={500} height={500} />
+            </div>
+            <span className="text-[1.5vw]">Afonso T. Esteves</span>
+            <span className="text-green-700">Tecnico de TI</span>
+          </div>
+          <div className="w-full h-[17vw] flex flex-col items-center gap-[0.2w]">
+            <div className="w-[13vw] h-[13vw] rounded-full bg-black overflow-hidden">
+              <Image className="w-full h-full object-contain" src={"/asset/unnamed.jpg"} alt="" width={500} height={500} />
+            </div>
+            <span className="text-[1.5vw]">Afonso T. Esteves</span>
+            <span className="text-green-700">Tecnico de TI</span>
+          </div>
+          <div className="w-full h-[17vw] flex flex-col items-center gap-[0.2w]">
+            <div className="w-[13vw] h-[13vw] rounded-full bg-black overflow-hidden">
+              <Image className="w-full h-full object-contain" src={"/asset/unnamed.jpg"} alt="" width={500} height={500} />
+            </div>
+            <span className="text-[1.5vw]">Afonso T. Esteves</span>
+            <span className="text-green-700">Tecnico de TI</span>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section className="flex flex-col gap-6">
-        <h2 className="text-2xl font-semibold">Números</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-          <div className="p-6 bg-gray-50 rounded-lg">
-            <p className="text-3xl font-bold text-blue-600">+50mil</p>
-            <p className="text-gray-700">Clientes Satisfeitos</p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-lg">
-            <p className="text-3xl font-bold text-blue-600">+10mil</p>
-            <p className="text-gray-700">Produtos Disponíveis</p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-lg">
-            <p className="text-3xl font-bold text-blue-600">24/7</p>
-            <p className="text-gray-700">Suporte ao Cliente</p>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

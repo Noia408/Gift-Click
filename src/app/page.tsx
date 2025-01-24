@@ -18,7 +18,7 @@ import Link from "next/link";
 export default function Home() {
   
   return (
-    <div className="w-full h-fit flex flex-col gap-[3vw] pt-[1vw]">
+    <div className="w-full h-fit flex flex-col gap-[3vw] py-[1vw]">
       {/* Banner Principal */}
       <div className="w-full h-[30vw] rounded-xl overflow-hidden">
         <Swiper
