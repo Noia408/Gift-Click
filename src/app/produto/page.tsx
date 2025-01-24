@@ -6,6 +6,15 @@ import * as React from "react"
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
+  import {
+    Select,
+    SelectContent,
+    SelectGroup,
+    SelectItem,
+    SelectLabel,
+    SelectTrigger,
+    SelectValue,
+  } from "@/components/ui/select"
 import Image from "next/image";
 import { Coins, CreditCard, Send, Shield, ShoppingBasket, Zap } from "lucide-react";
 
@@ -27,15 +36,26 @@ export default function Produto(){
                         <span className="text-green-700 text-[1.3vw]">Entretenimento</span>
                     </div>
                     <span className="text-[0.9vw] text-justify text-[#3b3d44]">O Google Play é a plataforma de entretenimento do Google que oferece músicas, filmes, livros e aplicativos para dispositivos Android. É a loja oficial de aplicativos do sistema operacional Android, onde os usuários podem navegar e baixar aplicativos desenvolvidos usando o Android SDK e publicados pelo Google. Os clientes podem comprar cartões-presente do Google Play na CoinGate para criptomoeda. Também aceitamos cartões de crédito/débito Visa e Mastercard!</span>
-                    <div className="flex gap-[1.5vw]">
-                        <div className="flex gap-[0.3vw]">
-                            <span className="tex-[1.2vw]">Regiao:</span>
-                            <span className="tex-[1.2vw] text-[#77c555]">America</span>
-                        </div>
-                        <div className="flex gap-[0.3vw]">
-                            <span className="tex-[1.2vw]">Valor do GiftCard:</span>
-                            <span className="tex-[1.2vw] text-[#77c555]">15 Dollares</span>
-                        </div>
+                    <div className="flex gap-[0.3vw]">
+                        <span className="tex-[1.3vw]">Regiao:</span>
+                        <span className="tex-[1.3vw] text-[#77c555]">America</span>
+                    </div>
+                    <div className="w-full h-[3vw]">
+                        <Select>
+                        <SelectTrigger className="w-[10vw] h-full border border-[#d7d9db] rounded-xl">
+                            <SelectValue placeholder="Seleciona o Valor" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectGroup>
+                            <SelectLabel>Fruits</SelectLabel>
+                            <SelectItem value="apple">Apple</SelectItem>
+                            <SelectItem value="banana">Banana</SelectItem>
+                            <SelectItem value="blueberry">Blueberry</SelectItem>
+                            <SelectItem value="grapes">Grapes</SelectItem>
+                            <SelectItem value="pineapple">Pineapple</SelectItem>
+                            </SelectGroup>
+                        </SelectContent>
+                        </Select>
                     </div>
                     <span className="text-[2.0vw]">5.000 kz</span>
                     <div className="w-full h-[4vw] flex gap-[0.5vw]">
