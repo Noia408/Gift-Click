@@ -1,6 +1,8 @@
 import Card from "@/components/card";
 import { Layers } from "lucide-react";
 import Link from "next/link";
+import { giftCards } from "../data/model/produto";
+import { ft } from "@/utility/formataTexto";
 
 export default function Compra(){
     return(
@@ -34,13 +36,9 @@ export default function Compra(){
                     <span>Resultados da pesquisa: 4489</span>
                 </div>
                 <div className="w-full h-fit grid grid-cols-4 gap-[1vw] mb-[1vw]">
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    {giftCards.map((gift) => (
+                        <Card key={gift.nome} capa={gift.imagem} regiao={gift.regiao} categoria={gift.categoria} nome={gift.nome} link={`/produto/${ft(gift.nome)}`}/>
+                     ))}
                 </div>
             </div>
         </div>
