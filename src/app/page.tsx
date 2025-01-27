@@ -14,6 +14,8 @@ import {
 } from "@/components/ui/accordion"
 import { BookCopy, ChevronRight, Clapperboard, Cpu, Gamepad, ShoppingBag } from "lucide-react";
 import Link from "next/link";
+import { giftCards } from "./data/model/produto";
+import { ft } from "@/utility/formataTexto";
 
 export default function Home() {
   
@@ -75,30 +77,11 @@ export default function Home() {
           modules={[Navigation, Autoplay]}
           className="w-full h-fit"
         >
-          <SwiperSlide className="w-full h-full">
-            <Card/>
+          {giftCards.map((gift) => (
+            <SwiperSlide key={gift.nome} className="w-full h-full">
+            <Card capa={gift.imagem} regiao={gift.regiao} categoria={gift.categoria} nome={gift.nome} link={`/produto/${ft(gift.nome)}`}/>
           </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
+            ))}
         </Swiper>
       </div>
       <div className="w-full h-fit p-[4vw] bg-green-700 rounded-xl flex flex-col gap-[1vw]">
@@ -119,30 +102,11 @@ export default function Home() {
           modules={[Navigation]}
           className="w-full h-fit"
         >
-          <SwiperSlide className="w-full h-full">
-            <Card/>
+          {giftCards.map((gift) => (
+            <SwiperSlide key={gift.nome} className="w-full h-full">
+            <Card capa={gift.imagem} regiao={gift.regiao} categoria={gift.categoria} nome={gift.nome} link={`/produto/${ft(gift.nome)}`}/>
           </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
-          <SwiperSlide className="w-full h-full">
-            <Card/>
-          </SwiperSlide>
+            ))}
         </Swiper>
       </div>
       <div className="w-full h-fit p-[2vw] bg-green-700 rounded-xl flex flex-col gap-[2vw]">
