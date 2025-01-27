@@ -8,6 +8,7 @@ import { giftCards } from "@/data/model/produto";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 
+
 const Compra = () => {
   const searchParams = useSearchParams();
   const query = searchParams.get("query") || ""; // Termo de busca

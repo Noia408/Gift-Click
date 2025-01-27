@@ -7,7 +7,6 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
 const Navbar = () => {
-  const [selectedCategory, setSelectedCategory] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
   const router = useRouter();
 
@@ -17,8 +16,6 @@ const Navbar = () => {
     // Redireciona com os filtros na URL
     const queryParams = new URLSearchParams();
     if (searchTerm.trim()) queryParams.append("query", searchTerm);
-    if (selectedCategory) queryParams.append("category", selectedCategory);
-
     router.push(`/compra?${queryParams.toString()}`);
   };
 
@@ -74,19 +71,6 @@ const Navbar = () => {
           >
             Compra
           </Link>
-          {/* Filtro de categorias */}
-          <select
-            className="border p-2 rounded-lg"
-            value={selectedCategory}
-            onChange={(e) => setSelectedCategory(e.target.value)}
-            onBlur={handleSearch} // Garante que a busca ocorre após seleção
-          >
-            <option value="">Todas as Categorias</option>
-            <option value="Games">Games</option>
-            <option value="Apps">Apps</option>
-            <option value="Entretenimento">Entretenimento</option>
-            <option value="Música">Música</option>
-          </select>
           <Link
             href="/about"
             className="hover:bg-[#eaebed] rounded-xl px-[1vw] h-[100%] flex justify-center items-center"
