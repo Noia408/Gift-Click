@@ -14,8 +14,9 @@ import {
 } from "@/components/ui/accordion"
 import { BookCopy, ChevronRight, Clapperboard, Cpu, Gamepad, ShoppingBag } from "lucide-react";
 import Link from "next/link";
-import { giftCards } from "./data/model/produto";
+
 import { ft } from "@/utility/formataTexto";
+import { giftCards } from "@/data/model/produto";
 
 export default function Home() {
   
