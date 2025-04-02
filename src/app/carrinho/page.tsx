@@ -1,4 +1,5 @@
 import ItenCar from "@/components/itencar"
+import Option from "@/components/option"
 import {
   Accordion,
   AccordionContent,
@@ -10,13 +11,17 @@ import { BadgePercent, CreditCard } from "lucide-react"
 export default function Carrinho(){
   return(
     <div className="w-full h-fit flex gap-[1vw] pt-[1vw]">
-      <div className="w-[60%] h-[40vw] flex flex-col rounded-xl border border-[#d7d9db] p-[2vw] gap-[2vw]">
+      <div className="w-[60%] h-fit flex flex-col rounded-xl border border-[#d7d9db] p-[2vw] gap-[2vw]">
           <h1 className="text-[1.7vw]">Formas de Pagamento</h1>
-          <div className="w-full h-fit flex flex-col gap-[1vw]">
-            
+          <div className="w-full h-fit grid grid-cols-2 gap-[1vw]">
+            <Option nome="Multicaixa" tipo="pagamento" imagem="/dfg" id="1"/>
+            <Option nome="Multicaixa" tipo="pagamento" imagem="/dfg" id="2"/>
+            <Option nome="Multicaixa" tipo="pagamento" imagem="/dfg" id="3"/> 
           </div>
           <h1 className="text-[1.7vw]">Metodo de Envio</h1>
-          <div className="w-full h-fit flex flex-col gap-[1vw]">
+          <div className="w-full h-fit grid grid-cols-2 gap-[1vw]">
+          <Option nome="Multicaixa" tipo="envio" imagem="/dfg" id="4"/>
+          <Option nome="Multicaixa" tipo="envio" imagem="/dfg" id="5"/>
             
           </div>
 
