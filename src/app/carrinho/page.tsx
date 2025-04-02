@@ -1,3 +1,4 @@
+import ItenCar from "@/components/itencar"
 import {
   Accordion,
   AccordionContent,
@@ -9,9 +10,23 @@ import { BadgePercent, CreditCard } from "lucide-react"
 export default function Carrinho(){
   return(
     <div className="w-full h-fit flex gap-[1vw] pt-[1vw]">
-      <div className="w-[65%] h-[40vw] flex rounded-xl border border-[#d7d9db] p-[2vw] gap-[2vw]"></div>
-      <div className="w-[35%] h-fit flex flex-col rounded-xl border border-[#d7d9db] p-[2vw] gap-[1vw]">
+      <div className="w-[60%] h-[40vw] flex flex-col rounded-xl border border-[#d7d9db] p-[2vw] gap-[2vw]">
+          <h1 className="text-[1.7vw]">Formas de Pagamento</h1>
+          <div className="w-full h-fit flex flex-col gap-[1vw]">
+            
+          </div>
+          <h1 className="text-[1.7vw]">Metodo de Envio</h1>
+          <div className="w-full h-fit flex flex-col gap-[1vw]">
+            
+          </div>
+
+      </div>
+      <div className="w-[40%] h-fit flex flex-col rounded-xl border border-[#d7d9db] p-[2vw] gap-[1vw]">
         <h1 className="text-[1.7vw]">Visão Geral da Compra</h1>
+        <div className="w-full h-fit flex flex-col gap-[1vw]">
+          <ItenCar nome="nome" capa="/hhhf" regiao="angola" preco={500}/>
+          <ItenCar nome="nome" capa="/hhhf" regiao="angola" preco={500}/>
+        </div>
         <div className="w-full h-fit">
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
